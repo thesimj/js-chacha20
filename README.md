@@ -1,9 +1,13 @@
 # JS-ChaCha20
 Pure JavaScript ChaCha20 stream cipher
 
+[![Build Status](https://travis-ci.org/thesimj/js-chacha20.svg?branch=master)](https://travis-ci.org/thesimj/js-chacha20)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/)
+
+
 ### Abstract
 ChaCha20 is a stream cipher designed by D. J. Bernstein. 
-It is a refinement of the Salsa20 algorithm, and it uses a 256-bit key.
+It is a refinement of the [Salsa20](https://github.com/thesimj/js-salsa20) algorithm, and it uses a 256-bit key.
 
 ChaCha20 successively calls the ChaCha20 block function, with the same key and nonce, and with successively increasing block counter parameters.
 ChaCha20 then serializes the resulting state by writing the numbers in little-endian order, creating a keystream block.
@@ -19,8 +23,10 @@ The inputs to ChaCha20 are:
 - 32-bit initial counter
 - Arbitrary-length plaintext
 
-Implementation derived from chacha-ref.c version 20080118
-See for details: http://cr.yp.to/chacha/chacha-20080128.pdf
+Implementation derived from RFC7539
+ChaCha20 and Poly1305 for IETF Protocols 
+- https://tools.ietf.org/pdf/rfc7539.pdf
+- https://cr.yp.to/chacha/chacha-20080128.pdf
 
 ### Install
 ```
