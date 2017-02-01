@@ -1,0 +1,13 @@
+sudo: false
+
+os:
+  - linux
+
+language: node_js
+
+node_js:
+  - "5"
+  - "6"
+  - "7"
+
+script: "npm run prod && npm run test"

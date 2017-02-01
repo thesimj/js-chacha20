@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "add-module-exports"
+  ],
+  "presets": [
+    "es2015"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "add-module-exports"
+      ],
+      "presets": [
+        "es2015",
+        "babili"
+      ]
+    }
+  }
+}

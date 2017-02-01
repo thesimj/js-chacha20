@@ -1,0 +1,54 @@
+{
+  "name": "js-chacha20",
+  "version": "1.0.0",
+  "description": "Pure JavaScript ChaCha20 stream cipher",
+  "main": "src/jschacha20.js",
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-babili": "^0.0.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babili": "^0.0.10",
+    "browserify": "^14.0.0",
+    "cross-env": "^3.1.4",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "standard": "^8.6.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "tape-watch": "^2.2.4",
+    "uglify-js": "^2.7.5"
+  },
+  "scripts": {
+    "prod": "browserify -s ./src/jschacha20.js -o ./src/jschacha20.min.js",
+    "test": "tape -r babel-register test/**/*.test.js | tap-spec",
+    "watch": "tape-watch test/**/*.test.js -r babel-register -p tap-spec",
+    "lint": "standard ./src/jschacha20.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesimj/js-chacha20.git"
+  },
+  "keywords": [
+    "cryptography",
+    "cipher",
+    "encryption",
+    "stream",
+    "salsa",
+    "salsa20",
+    "chacha",
+    "chacha20"
+  ],
+  "author": "Mykola Bubelich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thesimj/js-chacha20/issues"
+  },
+  "homepage": "https://github.com/thesimj/js-chacha20#readme"
+}
