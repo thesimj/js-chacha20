@@ -63,7 +63,11 @@
  *
  * @constructor
  */
-var JSChaCha20 = function (key, nonce, counter = 0) {
+var JSChaCha20 = function (key, nonce, counter) {
+  if (typeof counter === 'undefined') {
+    counter = 0
+  }
+
   if (!(key instanceof Uint8Array) || key.length !== 32) {
     throw new Error('Key should be 32 byte array!')
   }
