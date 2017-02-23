@@ -1,6 +1,6 @@
 {
   "name": "js-chacha20",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pure JavaScript ChaCha20 stream cipher",
   "main": "src/jschacha20.js",
   "directories": {
@@ -26,7 +26,6 @@
     "uglify-js": "^2.7.5"
   },
   "scripts": {
-    "prod": "browserify -s ./src/jschacha20.js -o ./src/jschacha20.min.js",
     "test": "tape -r babel-register test/**/*.test.js | tap-spec",
     "watch": "tape-watch test/**/*.test.js -r babel-register -p tap-spec",
     "lint": "standard ./src/jschacha20.js"
