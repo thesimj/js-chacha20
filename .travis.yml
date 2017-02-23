@@ -10,4 +10,4 @@ node_js:
   - "6"
   - "7"
 
-script: "npm run prod && npm run test"
+script: "npm run test"
