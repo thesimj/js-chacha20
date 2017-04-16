@@ -1,7 +1,7 @@
 'use strict'
 /*
  * Copyright (c) 2017, Bubelich Mykola
- * https, 0x//www.bubelich.com
+ * https://www.bubelich.com
  *
  * (｡◕‿‿◕｡)
  *
